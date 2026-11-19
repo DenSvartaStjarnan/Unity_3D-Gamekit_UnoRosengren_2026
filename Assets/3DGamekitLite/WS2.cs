@@ -1,5 +1,6 @@
 using System;
 using FMODUnity;
+using FMOD.Studio;
 using UnityEngine;
 
 public class WS2 : MonoBehaviour
@@ -25,9 +26,12 @@ public class WS2 : MonoBehaviour
     }
 
     public ElementalPower naturKraft;
-    public CharacterInformation characterInformation;
+    public CharacterInformation[] characterInformation;
 
     public int[] highScores;
+    
+    public EventInstance eventInstance;
+    public EventReference eventRef;
     
     private void Start()
     {
@@ -38,7 +42,7 @@ public class WS2 : MonoBehaviour
         eventInstance.getPlaybackState(out PLAYBACK_STATE state);
         Debug.Log(state);
         
-        PLAYBACK_STATE.STOPPED
+        //PLAYBACK_STATE.STOPPED
 
         foreach (CharacterInformation score in characterInformation)
         {
@@ -90,7 +94,7 @@ public class WS2 : MonoBehaviour
         
         Debug.Log(naturKraft);
         
-        Debug.Log(characterInformation.name);
+        Debug.Log(characterInformation[0].name);
         
         Debug.Log(highScores[2]);
     }
