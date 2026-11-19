@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5350945042955391417}
   - component: {fileID: -9089994053559311670}
-  - component: {fileID: 3290135735947155713}
+  - component: {fileID: -6092820507248100254}
   m_Layer: 0
   m_Name: MusicTrigger
   m_TagString: Untagged
@@ -54,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3290135735947155713
+--- !u!114 &-6092820507248100254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,14 +63,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7731506615276112603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e3abe3333354f53b9983909ce032eb, type: 3}
+  m_Script: {fileID: 11500000, guid: eaa01295576cd4c498c3fcf65b664be8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WS
-  timer: 5
-  referens:
+  m_EditorClassIdentifier: Assembly-CSharp::MusicTrigger
+  eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 488494915
+      Data2: 1191052446
+      Data3: -442120539
+      Data4: -1206582812
+    Path: event:/Music
